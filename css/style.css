@@ -1,7 +1,12 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333;
   font-family: sans-serif;
   font-size: 10px;
+
 }
 
 .container {
@@ -9,13 +14,57 @@ body {
   width: 420px;
 }
 
+/* Navbar styling */
+
 nav {
   margin: 0 auto;
-  padding: 10px 0 15px 15px;
+  padding: 10px 0 10px 15px;
   position: fixed;
   width: 420px;
+  background-color: #000;
 }
 
 .restaurant-list {
-  padding-top: 50px;
+  padding-top: 40px;
+}
+
+/* -----  Begin Restaurant Listing Section ---- */
+
+
+div.location {
+  background-color: #dadada;
+  margin: 0px;
+  padding: 15px;
+  border-bottom: 1px solid #959595;
+  width: 100%;
+  }
+
+div.location:hover {
+  background-color: #aaaaaa;
+}
+
+/* Text content */
+div.content {
+  display: inline-block;
+  width: 95%
+}
+
+div.arrow {
+  display: inline-block;
+  float: right;
+  padding-top:8px;
+  width: 5%
+}
+
+/* text styling */
+.content h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.2em;
+  letter-spacing: .02em;
+}
+
+.content h3 {
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
